@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <main>
+        <h1>Form Game</h1>
+        <div class="social-media">
+            <a href="#">
+                <img src="imgs/google.png" alt="Google">
+            </a>
+            <a href="#">
+                <img src="imgs/facebook.png" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="imgs/linkedin.png" alt="Linkedin">
+            </a>
+            </div>
+    <form action="">
+        <label for="name">
+            <span id="elementName">Username</span>
+            <input type="text" id="name" name="name" placeholder="Username" onblur="validarNome()" required>
+        </label>
+            <label for="email">
+                <span id="elementEmail">E-mail</span>
+                <input type="email" id="email" name="email" placeholder="E-mail" onblur="validarEmail()" required>
+            </label>
+
+            <label for="cpf">
+            <span id="elementCpf">CPF</span>
+            <input type="text" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX" onblur="validarCPF()"required><br>
+                </label>
+        <button class="submit"> 
+            <a href="quiz.html" class="submit-text">Clique aqui para acessar o jogo</a>
+        </button>
+    </form>
+    </main>
+    <script src="scripts/validar.js"></script>
+</body>
+</html>
+
+<!--
+    -Validar CPF
+    -Adicionar o favicon
+    -Página de resumo
+    -Imagem no formulário
+    -Inserir tabela (página de resumo)
+-->
