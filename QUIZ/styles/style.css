@@ -182,3 +182,10 @@ section.images .circle {
         font-size: 1rem;
     }
 }
+
+.detail{
+    padding: 4rem 0rem 0rem;
+    width: 30rem;
+    display: grid;
+    place-items: center;
+}
