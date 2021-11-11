@@ -22,36 +22,33 @@
                 <img src="imgs/linkedin.png" alt="Linkedin">
             </a>
             </div>
-    <form action="">
+    <form name="formulario" action="quiz.html" >
         <label for="name">
             <span id="elementName">Username</span>
-            <input type="text" id="name" name="name" placeholder="Username" onblur="validarNome()" required>
+            <input type="text" id="name" name="name" placeholder="Username" maxlength="50" onblur="validarNome()" required>
         </label>
             <label for="email">
                 <span id="elementEmail">E-mail</span>
-                <input type="email" id="email" name="email" placeholder="E-mail" onblur="validarEmail()" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" maxlength="60" onblur="validarEmail()" required>
             </label>
 
             <label for="cpf">
             <span id="elementCpf">CPF</span>
-            <input type="text" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX" onblur="testaCPF()" raequired><br>
+            <input type="text" inputmode="numeric" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX" maxlength="14" onblur="validarCPF()" onkeypress="" required><br>
                 </label>
-        <button class="submit"> 
-            <a href="quiz.html" class="submit-text">Clique aqui para acessar o jogo</a>
-        </button>
+        <button class="submit"> Clique aqui para acessar o jogo</button>
     </form>
     </main>
     <div>
-        <img src="imgs/detail.png" alt="detail" class="detail">
+        <!--<img src="imgs/detail.png" alt="detail" class="detail">--> <!--FIX THIS-->
     </div>
     <script src="scripts/validar.js"></script>
 </body>
 </html>
 
 <!--
+    -Somente números em CPF
+    -Consertar botão submit
     -Validar CPF
     -Adicionar o favicon
-    -Página de resumo X
-    -Imagem no formulário X
-    -Inserir tabela (página de resumo) X
 -->

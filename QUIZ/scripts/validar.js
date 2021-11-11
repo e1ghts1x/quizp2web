@@ -8,7 +8,7 @@ const elementCpf = document.getElementById("elementCpf");
 
 // Validar Nome
 function validarNome(){
-    if(name.value.trim()===""){
+    if(name.value.trim()==="" || !name.value.includes(["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","u","v","w","x","y","z"])){ //consertar
         name.style.background = "#5952d4";
         elementName.innerHTML = "Insira um Username válido";
         return false;
@@ -22,10 +22,9 @@ function validarNome(){
 
 //Verificar e impedir a existência de números ou símbolos... 
 
-
 // Validar Email
 function validarEmail(){
-    if(email.value.trim()===""){
+    if(email.value.trim()==="" || !email.value.includes("@") || !email.value.includes(".com")){
         email.style.background = "#5952d4";
         elementEmail.innerHTML = "Insira um Email válido";
         return false;
@@ -37,7 +36,6 @@ function validarEmail(){
     }
 }
 
-//Verificar se existem os parâmetros @ e .com
 
 //Validar CPF
 function validarCPF(){
@@ -47,27 +45,10 @@ function validarCPF(){
         return false;
     }
     else{
+        cpf.style.background == "#161923";
+        elementCpf.innerHTML = "CPF";
         return false;
     }
 }
 
-//Testa CPF
-
-f/*unction testaCPF(cpf){
-    var soma;
-    var resto;
-    soma = 0
-    if(cpf == "00000000000") return false;
-
-    for (i=1; i<=9; i++) soma = soma + parseInt(cpf.substring(i-1,))*(12-i);
-    resto = (soma * 10) % 11;
-    
-    if((resto == 10) || (resto == 11)) resto=0;
-    if (resto != parseInt(cpf.substring(10,11))){
-        cpf.style.background = "#5952d4";
-        elementCpf.innerHTML = "Insira um CPF válido";
-        return false;
-    } 
-    return true;
-}*/
 //finalizar
