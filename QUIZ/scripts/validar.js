@@ -8,7 +8,7 @@ const elementCpf = document.getElementById("elementCpf");
 
 // Validar Nome
 function validarNome(){
-    if(name.value.trim()==="" || !name.value.includes(["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","u","v","w","x","y","z"])){ //consertar
+    if(name.value.trim()===""){ //consertar
         name.style.background = "#5952d4";
         elementName.innerHTML = "Insira um Username válido";
         return false;
@@ -39,7 +39,7 @@ function validarEmail(){
 
 //Validar CPF
 function validarCPF(){
-    if(cpf.value.trim()===""){
+    if(cpf.value.trim()==="" || cpf.value.trim() < 12){
         cpf.style.background = "#5952d4";
         elementCpf.innerHTML = "Insira um CPF válido"
         return false;
@@ -50,5 +50,10 @@ function validarCPF(){
         return false;
     }
 }
+
+function onlyNumber(){
+    cpf.value = cpf.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+}
+
 
 //finalizar

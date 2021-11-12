@@ -34,7 +34,7 @@
 
             <label for="cpf">
             <span id="elementCpf">CPF</span>
-            <input type="text" inputmode="numeric" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX" maxlength="14" onblur="validarCPF()" onkeypress="" required><br>
+            <input type="text" type="number" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" maxlength="14" onblur="validarCPF()" oninput="onlyNumber()" required><br>
                 </label>
         <button class="submit"> Clique aqui para acessar o jogo</button>
     </form>
