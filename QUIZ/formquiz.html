@@ -7,6 +7,8 @@
     <title>Form Game</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="favicon.ico">
+    <script type="text/javascript" src="scripts/jquery-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="scripts/jquery.maskedinput-1.1.4.pack.js"/></script>
 </head>
 <body>
     <main>
@@ -25,22 +27,24 @@
     <form name="formulario" action="quiz.html" >
         <label for="name">
             <span id="elementName">Username</span>
-            <input type="text" id="name" name="name" placeholder="Username" maxlength="50" onblur="validarNome()" required>
+            <input type="text" id="name" name="name" placeholder="Username" maxlength="50" onblur="validarNome()" oninput="onlyLetters()" required>
         </label>
-            <label for="email">
-                <span id="elementEmail">E-mail</span>
-                <input type="email" id="email" name="email" placeholder="E-mail" maxlength="60" onblur="validarEmail()" required>
-            </label>
+        
+        <label for="email">
+            <span id="elementEmail">E-mail</span>
+            <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" maxlength="60" onblur="validarEmail()" required>
+        </label>
 
-            <label for="cpf">
+        <label for="cpf">
             <span id="elementCpf">CPF</span>
-            <input type="text" type="number" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" maxlength="14" onblur="validarCPF()" oninput="onlyNumber()" required><br>
-                </label>
-        <button class="submit"> Clique aqui para acessar o jogo</button>
+            <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" maxlength="14" onblur="validarCPF()" oninput="onlyNumber()" required><br>
+        </label>
+
+        <button class="submit">Clique aqui para acessar o jogo</button>
     </form>
     </main>
     <div>
-        <!--<img src="imgs/detail.png" alt="detail" class="detail">--> <!--FIX THIS-->
+        <img src="imgs/detail.png" alt="detail" class="detail"> <!--FIX THIS-->
     </div>
     <script src="scripts/validar.js"></script>
 </body>

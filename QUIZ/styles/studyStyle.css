@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-/*CENTRALIZAR*/
-
 * {
  /*   margin: 20px;
     padding: 5px;
     border:  10px;
     box-sizing: border-box;*/
+    text-align: justify;
     font-family: "Poppins", sans-serif;
 }
 
@@ -15,35 +14,52 @@ body {
     color: white;
     font-weight: 500;
     display: flex;
-    min-height: 100vh;
-    min-width: 100vw;
+    /*min-height: 100vh;
+    min-width: 100vw;*/
     text-align: justify;
-    padding-left: 20px;
-    padding-right: 0px;
+    padding-left:50px ;
+    padding-right: 50px;
 }
 
 p{
-    text-align: justify;
+    
     text-indent: 36pt; /*Espaço na primeira linha*/
+    text-align: justify;
+    
+    text-indent: 36pt;
 }
+
+table, tr,td, th      
+     {
+         border: 1px solid white;
+         width: 50%;
+        text-align: center;
+        padding: 3px;
+        
+     }
+
+     td{
+
+        padding: 10px;
+        }
+
 
 img{
     width: 200px;
 }
 
-main {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 
 main h1 {
     color: #8880FE;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    text-align: right;
+    font-size: 36px;
+   /* margin-bottom: 3rem;*/
+    text-align: center;
+}
+
+main h2 {
+font-size: 25px;
+
 }
 
 
@@ -65,8 +81,8 @@ main .social-media a:first-child img {
     margin-left: 0;
 }*/
 
-main .alternative {
-    margin-top: 1rem;
+/*main .alternative {
+    margin-top: 20px;
 }
 
 main .alternative span {
@@ -89,8 +105,8 @@ main .alternative span::before, main .alternative span::after {
 main .alternative span::after {
     left: 50px;
 }
-
-main form {
+*/
+/*main form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,9 +120,9 @@ main form label {
 main form label span {
     font-size: 1.1rem;
     margin-top: 2rem;
-}
+}*/
 
-main form input {
+main  input {
     background: #161923;
     width: 300px;
     height: 50px;
@@ -119,7 +135,7 @@ main form input {
     border-radius: 8px;
 }
 
-main form input[type="submit"] {
+main input[type="submit"] {
     cursor: pointer;
     width: 50%;
     margin-top: 4rem;
@@ -131,7 +147,7 @@ main form input[type="submit"] {
     transition: all .3s ease-in-out;
 }
 
-main form input[type="submit"]:hover {
+main  input[type="submit"]:hover {
     background: #5952d4;
 }
 
@@ -192,4 +208,3 @@ section.images .circle {
         font-size: 1rem;
     }
 }
-
