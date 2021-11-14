@@ -149,9 +149,10 @@ section.images .circle {
 }
 
 .detail{
-    padding: 4rem 0rem 0rem;
-    width: 30rem;
-    display: grid;
+    margin: 10px;
+    padding: 16rem 0rem 0rem;
+    width: 100%;
+    height: auto;
     place-items: center;
 }
 

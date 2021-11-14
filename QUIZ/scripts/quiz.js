@@ -1,5 +1,4 @@
 const quizData = [
-
     {
         question: "Qual a linguagem que 'roda' em um navegador?",
         a: "Java",
@@ -25,7 +24,6 @@ const quizData = [
         correct: "a",
 
     },
-
     {
         question: "Em que ano o JavaScript foi lançado?",
         a: "1996",
@@ -50,7 +48,22 @@ const quizData = [
         d: "Representar o cabeçalho do documento",
         correct:"a",
     },
-
+    {
+        question: "Para exibir valores no corpo da página, é preciso usar a função ",
+        a: "Windows.open()",
+        b: "document.write()",
+        c: "alert()",
+        d: "Nenhuma das alternativas",
+        correct:"b",
+    },
+    {
+        question: "Assinale a alternativa que representa a forma correta para declaração de uma variável em JavaScript. Leve em consideração o conjunto de regras que visa as melhores práticas da programação.",
+        a: "var a = 2",
+        b: "var = a",
+        c: "var a = 2 inteiros",
+        d: "var a = (_2_)",
+        correct:"a",
+    },
 ];
 
 const quiz = document.getElementById('quiz')
