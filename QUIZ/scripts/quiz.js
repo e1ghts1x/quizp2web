@@ -107,12 +107,17 @@ submitBtn.addEventListener('click', () => {
 
        if(currentQuiz < quizData.length) {
            loadQuiz()
-       } else {
+       } else if(score > 3){
            quiz.innerHTML = `
            <h2>Você respondeu ${score}/${quizData.length} questões corretamente</h2>
 
            <button onclick="location.reload()">Recarregar</button>
            `
+       } else if(score < 3){
+           quiz.innerHTML = `
+           <h2>Você respondeu ${score}/${quizData.length} questões corretamente</h2>
+            <h2>Estude mais</h2>
+            <button onclick="window.location.href='Resumo.html'">Clique aqui</button>`
        }
     }
 })

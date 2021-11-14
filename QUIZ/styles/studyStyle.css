@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 * {
- /*   margin: 20px;
+ /*  margin: 20px;
     padding: 5px;
     border:  10px;
     box-sizing: border-box;*/
-    text-align: justify;
     font-family: "Poppins", sans-serif;
 }
 
@@ -17,32 +16,30 @@ body {
     /*min-height: 100vh;
     min-width: 100vw;*/
     text-align: justify;
-    padding-left:50px ;
-    padding-right: 50px;
+    /*padding-left:50px ;
+    padding-right: 50px;*/
 }
 
 p{
-    
     text-indent: 36pt; /*Espaço na primeira linha*/
     text-align: justify;
-    
     text-indent: 36pt;
+    padding: 10px;
 }
 
 table, tr,td, th      
      {
-         border: 1px solid white;
-         width: 50%;
+        border: 1px solid white;
+        width: 50%;
         text-align: center;
         padding: 3px;
-        
+        margin-left: auto;
+        margin-right: auto;
      }
 
      td{
-
         padding: 10px;
         }
-
 
 img{
     width: 200px;
@@ -55,11 +52,12 @@ main h1 {
     font-size: 36px;
    /* margin-bottom: 3rem;*/
     text-align: center;
+    padding: 10px;
 }
 
 main h2 {
-font-size: 25px;
-
+    font-size: 25px;
+    padding: 10px;
 }
 
 
@@ -173,6 +171,8 @@ section.images .circle {
     clip-path: circle(40% at right 80%);
     z-index: -1;
 }
+
+
 
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
     section.images img {

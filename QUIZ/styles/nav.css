@@ -1,0 +1,38 @@
+*{
+    margin:0 ;
+    padding: 10;
+}
+
+.nav{
+    background: #273040;
+    border: 3px solid #273040;
+    height: 80px;
+}
+
+.nav h1{
+    color: #6C63FF;
+    margin: 0px;
+}
+
+.nav nav ul{
+    float: left;
+    margin: 0px;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.nav nav ul li{
+    display: inline;
+    margin: 0px 3px 0px;
+}
+
+.nav nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav nav ul li a:hover{
+    color: #6C63FF;
+    text-decoration: underline;
+}
+/*#273040*/

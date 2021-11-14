@@ -49,14 +49,18 @@ function validarCPF(){
     }
 }
 
+//Somente números no campo CPF
 function onlyNumber(){
     cpf.value = cpf.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
 }
 
+//Somente letras no campo Username
 function onlyLetters(){
     nome.value = nome.value.replace(/[0-9.]/g, '');
 }
 
+
+//Máscara de CPF em jquery
 $(document).ready(function(){
     $("#cpf").mask("999.999.999-99");
 });
