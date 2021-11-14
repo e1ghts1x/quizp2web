@@ -1,0 +1,33 @@
+.footerbar{
+    background: #273040;
+    border: 3px solid #273040;
+    height: 60px;
+}
+
+.footerbar h1{
+    color: #6C63FF;
+    margin: 0px;
+}
+
+.footerbar footer ul{
+    float: left;
+    margin: 0px;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.footerbar footer ul li{
+    display: inline;
+    margin: 0px 3px 0px;
+}
+
+.footerbar footer ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footerbar footer ul li a:hover{
+    color: #6C63FF;
+    text-decoration: underline;
+}
+/*#273040*/

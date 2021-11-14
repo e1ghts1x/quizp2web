@@ -11,7 +11,7 @@ const botao = document.querySelector("button");
 function validarNome(){
     if(nome.value.trim()===""){
         nome.style.background = "#5952d4";
-        elementName.innerHTML = "Insira um Username válido";
+        elementName.innerHTML = "Insira um Nome válido";
         botao.disabled = true;
     }
     else{
