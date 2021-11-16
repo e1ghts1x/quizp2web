@@ -16,7 +16,7 @@ function validarNome(){
     }
     else{
         nome.style.background = "#161923";
-        elementName.innerHTML = "Username"
+        elementName.innerHTML = "Nome"
         botao.disabled = false;
     }
 }
