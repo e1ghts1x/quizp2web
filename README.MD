@@ -1,4 +1,4 @@
-#P2 Web
+# P2 Web
 ## 🚀 Criar um site utilizando os conhecimentos passados em aula durante o 2º Semestre de TADS.
 
 <h4 align="center"> 
