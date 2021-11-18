@@ -1,8 +1,8 @@
-# P2 Web
+# 'Quiz' P2 Web
 ## 🚀 Criar um site utilizando os conhecimentos passados em aula durante o 2º Semestre de TADS.
 
 <h4 align="center"> 
-	🚧  P2 WEB 🚀 Em construção...  🚧
+	🚧  'Quiz' P2 WEB 🚀 Em construção...  🚧
 </h4>
 
 ### Requisitos cumpridos
