@@ -1,6 +1,6 @@
 const quizData = [
     {
-        question: "Qual a linguagem que 'roda' em um navegador?",
+        question: "Qual a linguagem que 'roda' em um navegador?", //Javascript
         a: "Java",
         b: "C#",
         c: "Python",
@@ -8,7 +8,7 @@ const quizData = [
         correct: "d",
     },
     {
-        question: "O que significa a sigla CSS?",
+        question: "O que significa a sigla CSS?", //CSS
         a: "Central Style Sheets",
         b: "Cascading Style Sheets",
         c: "Cascading Simple Sheets",
@@ -16,7 +16,7 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "O que significa a sigla HTML?",
+        question: "O que significa a sigla HTML?", //Html
         a: "Hypertext Markup Language",
         b: "Hypertext Markdown Language",
         c: "Hyperloop Machine Language",
@@ -25,7 +25,7 @@ const quizData = [
 
     },
     {
-        question: "Em que ano o JavaScript foi lançado?",
+        question: "Em que ano o JavaScript foi lançado?", //Javascript
         a: "1996",
         b: "1995",
         c: "1994",
@@ -33,7 +33,7 @@ const quizData = [
         correct: "b",
     },
     {
-        question: "Qual a função do atributo target?",
+        question: "Qual a função do atributo target?", //Html
         a: "Tag responsável pela criação de um link",
         b: "Abrir o link na mesma aba",
         c: "Indicar o caminho relativo ou absoluto de uma outra página",
@@ -41,7 +41,7 @@ const quizData = [
         correct:"d",
     },
     {
-        question: "Para que serve a instrução DOCTYPE?",
+        question: "Para que serve a instrução DOCTYPE?", //Html
         a: "Indicar a versão do HTML",
         b: "Inserir elementos em um documento",
         c: "Indicar o idioma",
@@ -49,7 +49,7 @@ const quizData = [
         correct:"a",
     },
     {
-        question: "Para exibir valores no corpo da página, é preciso usar a função ",
+        question: "Para exibir valores no corpo da página, é preciso usar a função ", //Javascript
         a: "Windows.open()",
         b: "document.write()",
         c: "alert()",
@@ -57,12 +57,20 @@ const quizData = [
         correct:"b",
     },
     {
-        question: "Assinale a alternativa que representa a forma correta para declaração de uma variável em JavaScript. Leve em consideração o conjunto de regras que visa as melhores práticas da programação.",
+        question: "Assinale a alternativa que representa a forma correta para declaração de uma variável em JavaScript. Leve em consideração o conjunto de regras que visa as melhores práticas da programação.", //Javascript
         a: "var a = 2",
         b: "var = a",
         c: "var a = 2 inteiros",
         d: "var a = (_2_)",
         correct:"a",
+    },
+    {
+        question: "Qual é a propriedade do CSS que estabelece o raio da borda inferior esquerda do box?", //CSS
+        a: "border-top-left-radius",
+        b: "border-radius",
+        c: "border-bottom-left-radius",
+        d: "border-top-right-radius",
+        correct:"c",
     },
 ];
 
@@ -120,13 +128,13 @@ submitBtn.addEventListener('click', () => {
 
        if(currentQuiz < quizData.length) {
            loadQuiz()
-       } else if(score > 3){
+       } else if(score > 4){
            quiz.innerHTML = `
            <h2>Você respondeu ${score}/${quizData.length} questões corretamente</h2>
 
-           <button onclick="location.reload()">Recarregar</button>
+           <button onclick="window.location.href='formquiz.html'">Menu Principal</button>
            `
-       } else if(score < 3){
+       } else if(score < 4){
            quiz.innerHTML = `
            <h2>Você respondeu ${score}/${quizData.length} questões corretamente</h2>
             <h2>Estude mais</h2>
@@ -134,13 +142,3 @@ submitBtn.addEventListener('click', () => {
        }
     }
 })
-
-/* Arquivo server.jsconst http = require('http');const host = 'localhost';
-const port = 8000;const requestListener = function (req, res) {
-    console.log('request received');    res.setHeader('Content-Type', 'text/html');
-    res.writeHead(200);
-    res.end('<h1>This is Ngrok</h1>');
-};const server = http.createServer(requestListener);
-server.listen(port, host, () => {
-    console.log(`Server is running on http://${host}:${port}`);
-});*/

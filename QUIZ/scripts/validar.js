@@ -37,6 +37,7 @@ function validarEmail(){
 
 //Validar CPF
 function validarCPF(){
+    soma = (cpf.value)
     if(cpf.value.trim()==="" || cpf.value.length < 14){
         cpf.style.background = "#5952d4";
         elementCpf.innerHTML = "Insira um CPF válido"
