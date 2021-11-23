@@ -84,9 +84,3 @@ function onlyNumber(){
 function onlyLetters(){
     nome.value = nome.value.replace(/[0-9.]/g, '');
 }
-
-
-//Máscara de CPF em jquery
-/*$(document).ready(function(){
-    $("#cpf").mask("999.999.999-99");
-});*/
