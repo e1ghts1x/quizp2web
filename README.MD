@@ -14,3 +14,7 @@
 - [x] CSS
 - [x] Javascript para validação do formulário
 - [x] Função no javascript para validação no CPF
+
+<h6 align="center">
+	Criado por: <a href="https://github.com/e1ghts1x">Emanuel</a> & <a href="https://github.com/Mahclarasilva">Maria Clara</a>
+</h6>
